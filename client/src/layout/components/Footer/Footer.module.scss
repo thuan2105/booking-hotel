@@ -1,0 +1,39 @@
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.text {
+    & hr {
+        width: 100%;
+        color: var(--primary);
+    }
+    & p {
+        margin: 6px 0;
+    }
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}

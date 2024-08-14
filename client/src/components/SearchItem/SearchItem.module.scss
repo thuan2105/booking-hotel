@@ -1,0 +1,96 @@
+.wrapper {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+// Description
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 2;
+}
+
+.title {
+    font-size: 2.6rem;
+    color: var(--color-btn-default);
+}
+
+.taxi {
+    font-size: 1.4rem;
+    background-color: #008009;
+    color: var(--white);
+    width: max-content;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.sub__title {
+    font-weight: bold;
+}
+
+.features {
+    font-size: 1.5rem;
+}
+
+.cancel {
+    font-weight: bold;
+}
+
+.cancel,
+.cancel-sub_title {
+    font-size: 1.6rem;
+    color: #008009;
+}
+
+// Details
+.details {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+    & span {
+        font-weight: 500;
+    }
+    & button {
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 5px;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+.detail-text {
+    margin-right: 4px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price {
+    font-size: 2.4rem;
+}
+
+.tax {
+    color: var(--gray);
+    font-size: 1.5rem;
+}

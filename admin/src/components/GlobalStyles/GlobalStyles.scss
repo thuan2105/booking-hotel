@@ -1,0 +1,103 @@
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-gray: gray;
+    --color-111: #111;
+    --color-333: #333;
+    --primary: #003580;
+
+    --webkit-box-shadow-default: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    --box-shadow-default: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 1.6rem;
+    overflow-y: overlay;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dark {
+    background-color: var(--color-111);
+    color: rgb(156, 156, 156);
+
+    .logo-mode {
+        color: #999;
+    }
+    .navbar-mode {
+        color: #999;
+        border-color: #333;
+    }
+    .navbar-search-mode {
+        border-color: var(--color-gray);
+    }
+    .sidebar-mode {
+        background-color: var(--color-111);
+        border-color: #333;
+    }
+    .sidebar-top-mode {
+        border-color: var(--color-333);
+    }
+
+    .sidebar-item-mode:hover {
+        background-color: var(--color-333);
+    }
+    .sidebar-icon-mode {
+        color: #999;
+    }
+
+    .data-grid-mode {
+        background-color: var(--color-111);
+        color: var(--color-gray);
+        border-color: var(--color-111);
+        .btn-mode,
+        .cell-status-mode {
+            color: var(--color-gray);
+            border: none;
+        }
+    }
+    .css-1b065pg-MuiDataGrid-root .MuiDataGrid-container--top [role='row'] {
+        background: var(--color-111);
+    }
+    .stroke {
+        stroke: rgba(228, 228, 228, 0.219);
+    }
+
+    .table-mode {
+        background-color: var(--color-111);
+        .table-mode-cell {
+            color: var(--color-gray);
+        }
+    }
+    .data-table-link-mode {
+        color: var(--color-gray) !important;
+        border: none !important;
+        &:hover {
+            color: var(--color-white) !important;
+        }
+    }
+
+    input {
+        background-color: transparent;
+    }
+}

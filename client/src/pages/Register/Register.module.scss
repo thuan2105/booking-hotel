@@ -1,0 +1,123 @@
+.header {
+    width: 100%;
+    height: 65px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    .navbar-right {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .icon-flag {
+        width: 26px;
+        height: 26px;
+        right: 60px;
+        border-radius: 50%;
+        position: absolute;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .icon-help {
+        color: var(--white);
+        font-size: 2.4rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.body {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    max-width: 360px;
+    gap: 10px;
+    .title {
+        font-size: 2rem;
+        margin: 22px 0;
+        display: flex;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .title-link {
+            color: var(--primary);
+            margin-left: 6px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .wrap-input {
+        display: flex;
+        gap: 10px;
+        .input-item {
+            .input {
+                min-width: 174px;
+            }
+        }
+    }
+    .input-item {
+        margin-top: 10px;
+    }
+
+    .input {
+        width: 100%;
+        height: 36px;
+        font-size: 1.4rem;
+        padding: 8px;
+        margin: 4px 0;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid var(--black);
+    }
+    .btn {
+        width: 100%;
+        margin-top: 6px;
+        height: 40px;
+        &:hover {
+            color: var(--primary);
+            background-color: rgba(0, 139, 139, 0);
+            border: 1px solid var(--primary);
+        }
+    }
+}
+.input-error {
+    color: rgba(219, 0, 0, 0.776);
+}
+
+.footer {
+    width: 100%;
+    padding: 16px;
+}
+
+.footer-content {
+    flex-direction: column;
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    width: 360px;
+    text-align: center;
+}
+.footer-item {
+    font-size: 1.4rem;
+    border-top: 1px solid #e7e7e7;
+    padding: 16px 0;
+    & a {
+        color: #006ec4;
+        text-decoration: none;
+    }
+}

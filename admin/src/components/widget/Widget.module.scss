@@ -1,0 +1,74 @@
+.widget {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    -webkit-box-shadow: var(--webkit-box-shadow-default);
+    box-shadow: var(--box-shadow-default);
+    border-radius: 10px;
+    height: 140px;
+
+    .widget-right,
+    .widget-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+// Widget Left
+.widget-left {
+    .widget-title {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(160, 160, 160);
+    }
+
+    .widget-counter {
+        font-size: 2.8rem;
+        font-weight: 300;
+    }
+
+    .widget-link {
+        width: max-content;
+        font-size: 1.4rem;
+        border-bottom: 1px solid rgb(179, 179, 179);
+    }
+}
+
+// Widget Right
+.widget-right {
+    .widget-percentage {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        &.positive {
+            color: green;
+        }
+        &.negative {
+            color: red;
+        }
+    }
+    .widget-icon {
+        font-size: 2.8rem;
+        padding: 5px;
+        border-radius: 5px;
+        align-self: flex-end;
+    }
+    .brg-person {
+        color: crimson;
+        background-color: rgba(255, 0, 0, 0.2);
+    }
+    .brg-cart {
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.2);
+    }
+    .brg-money {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.2);
+    }
+    .brg-acc {
+        color: purple;
+        background-color: rgba(128, 0, 128, 0.2);
+    }
+}

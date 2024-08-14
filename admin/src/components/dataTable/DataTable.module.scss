@@ -1,0 +1,58 @@
+.data-table {
+    padding: 20px;
+    .data-grid {
+        font-size: 1.4rem;
+        background-color: var(--color-white);
+    }
+
+    .data-table-title {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 10px;
+
+        .data-table-link {
+            padding: 4px 20px;
+            font-size: 1.8rem;
+            color: green;
+            border-radius: 5px;
+            border: 1px solid green;
+            &:hover {
+                background-color: green;
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .cell-action {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 100%;
+        .view-btn,
+        .delete-btn {
+            padding: 5px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .delete-btn {
+            color: crimson;
+            border: 1px solid rgba(220, 20, 60, 0.6);
+            line-height: initial;
+            &:hover {
+                background-color: crimson;
+                color: var(--color-white);
+            }
+        }
+        .view-btn {
+            color: darkblue;
+            border: 1px solid rgba(0, 0, 139, 0.596);
+            line-height: initial;
+            &:hover {
+                background-color: darkblue;
+                color: var(--color-white);
+            }
+        }
+    }
+}
